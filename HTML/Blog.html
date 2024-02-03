@@ -1,1 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> The King Blog </title>
+    <link href="KINGS WORLD NEW LOGO.jpg" rel='icon' sizes="32x32" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <!-- Add :hover to the nav bar to make it look cool-->
+    <nav class="navbar">
+        <img src="KINGS WORLD NEW LOGO.jpg" height="50px" logo" alt="Logo">
+        <ul class="links-container">
+            <li class="link-item"><a href="#" class="link">home</a></li>
+            <li class="link-item"><a href="#" class="link"> About us </a></li>
+            <li class="link-item"> <a href="#" class="link"> Sign in </a></li>
+        </ul>
+    </nav>
+    <style>
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
+ 
+        .light-mode {
+            background-color: white;
+            color: black;
+        }
 
+        .mode {
+            background-color: #000407;
+            color: white;
+            border-radius: 10px;
+            padding: 10px 20px;
+            text-decoration: none;
+            text-transform: capitalize;
+            border-color: #fff;
+            object-position: center;
+            align-items: center;
+            align-content: center;
+        }
+    </style>
+    <script>
+        function darkMode() {
+            let element = document.body;
+            let content = document.getElementById("DarkModetext");
+            element.className = "dark-mode";
+            content.innerText = "Dark Mode is ON";
+        }
+        function lightMode() {
+            let element = document.body;
+            let content = document.getElementById("DarkModetext");
+            element.className = "light-mode";
+            content.innerText = "Light Mode is ON";
+        }
+    </script>
+</body>
+<style>
+    home.css * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        width: 100%;
+        position: relative;
+        font-family: 'poppins', sans-serif;
+    }
+
+    ::selection {
+        background: #b3acac;
+        color: #015ebb;
+    }
+
+    .navbar {
+        width: 100%;
+        height: 60px;
+        position: fixed;
+        top: 0;
+        left: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: left;
+        padding: 0;
+        background: #2f0494;
+        z-index: 5;
+    }
+
+    .links-container {
+        display: flex;
+        list-style: none;
+    }
+
+    .link {
+        padding: 10px;
+        margin-left: 10px;
+        text-decoration: none;
+        text-transform: capitalize;
+        color: #eeeeee;
+    }
+</style>
+<br><br> <br><center><br><button onclick="darkMode()" class="mode">Darkmode</button>
+    <button onclick="lightMode()" class="mode">LightMode</button> </center>
+<header class="header">
+    <div class="content">
+        <h1 class="heading">
+            <span class="small" style=" text-decoration: ;">welcome to</span>
+            The
+            <br><span class="no-fill">Kings World</span>
+        </h1>
+        <a href="New Test Login.htm" class="btn"> Sign in to get more </a>
+    </div>
+    
+</header>
+<style>
+    .header {
+        margin-top: 60px;
+        width: 100%;
+        height: calc(100vh - 60px);
+        background: url(car-advertisement-poster-design-5.jpg) no-repeat;
+        background-size: cover;
+        background-repeat:no-repeat;
+        background-position: center center;
+        background-attachment:fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .content {
+        text-align: center;
+    }
+
+    .heading {
+        color: #0c0e7e;
+        text-transform: capitalize;
+        font-size: 80px;
+        line-height: 60px;
+        margin-bottom: 80px;
+    }
+
+    .heading .small {
+        display: block;
+        font-size: 40px;
+    }
+
+    .heading .no-fill {
+        font-style: italic;
+        color: transparent;
+        -webkit-text-stroke: 2px #04066e;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        border-radius: 10px;
+        background: rgba(5, 79, 177, 0.733);
+        color: #f7f7f7;
+        text-decoration: none;
+        text-transform: capitalize;
+        border-color: #fff;
+    }
+</style>
+
+<section class="blogs-section">
+    <div class="blog-card">
+        <img src="coding.png" class="blog-image" alt="">
+        <h1 class="blog-title">The Art and Science of Coding: Unleashing the Power of Logic</h1>
+        <p class="blog-overview">In today's digital age, coding has emerged as an essential skill that transcends
+            borders and industries. Whether you're an aspiring software developer, a curious hobbyist, or simply someone
+            looking to understand the technology shaping our world, coding is a doorway to a realm of infinite
+            possibilities. In this blog post, we will explore the world of coding, its significance, and why learning to
+            code can be a transformative experience.</p>
+            <button class=" read-more-button">read</a> </button>
+            <div class="full-content">
+             <!-- This is where i will put the full content of the page -->
+            
+            <summary>This is just an example of a video tag (mp4) </summary>
+           <video src="Video.mp4" controls width="250px" poster="hacker.jpg" slot="3"></video> 
+        </div>
+    </div>
+</section>
+<section class="blogs-section">
+    <div class="blog-card">
+        <img src="forex image.jpg" class="blog-image" alt="forex">
+        <h1 class="blog-title"> Get a little insite on forex trading </h1>
+        <p class="blog-overview">Forex trading, also known as foreign exchange trading or currency trading, is a global
+            marketplace where traders buy and sell currencies. It's one of the largest financial markets in the world,
+            with a daily trading volume of over $6 trillion. In this comprehensive guide, we will explore the ins and
+            outs of forex trading, from understanding the basics to developing a winning trading strategy.</p>
+        <a href="King Forex.html" class="btn dark" target="_blank">read</a>
+    </div>
+</section>
+<section class="blogs-section">
+    <div class="blog-card">
+        <img src="Linux 1.jpg" height=150px "blog-image" alt="Linux">
+        <h1 class="blog-title"> What is Linux? </h1>
+        <p class="blog-overview">Linux is a free and open-source operating system kernel that serves as the core
+            component of various Unix-like operating systems, commonly referred to as "Linux distributions" or "Linux
+            distros." It was created by Linus Torvalds in 1991 and has since evolved into a powerful and versatile
+            operating system used by millions of individuals, organizations, and enterprises worldwide.</p>
+        <button class=" read-more-button">read</a> </button>
+        <div class="full-content">
+            <article>
+                <p><img src="Linux.jpg" height="200px" width="300px" alt="linux">
+                <h3>Embracing the Power of Linux: A Journey into the Open-Source World </p>
+                </h3>
+                <p> In the realm of operating systems, Linux stands tall as a beacon of open-source excellence. For
+                    those willing to take the plunge into the world of penguins, terminal commands, and endless
+                    customization, Linux offers an adventure like no other. In this blog post, we'll delve into the
+                    fascinating universe of Linux, exploring its origins, core principles, versatility, and why it's a
+                    compelling choice for both enthusiasts and professionals.
+            </article>
+            </p>
+            <br>
+            <p><img src="linus 2.jpg" class="article" alt="Linus Torvalds"> <img src="linus 3.jpg" class="article" Linus">
+                <br> <b style="color: #04066e;">Linus Torvalds</b>
+            <h3> The Birth of Linux: A Tale of Collaboration</h3>
+            </p>
+            <p> Linux, created by Linus Torvalds in 1991, began as a personal project. Linus, a computer science student
+                in Finland, wanted to build a free and open-source Unix-like operating system kernel. What started as a
+                small experiment soon grew into a global collaborative effort.
+            <p> One of Linux's defining characteristics is its open-source nature. This means its source code is freely
+                available to anyone, allowing a vast community of developers to contribute, enhance, and distribute
+                Linux distributions (commonly known as distros) across the globe. This collaborative spirit has led to
+                the development of some of the most stable and secure operating systems in existence.</p>
+            </p>
+            <article>
+                <p><img src="Tailoring Linux.jfif" class="article" alt="versatile">
+                <h3>Versatility and Customization: Tailoring Linux to Your Needs </h3>
+                <p> Linux isn't a one-size-fits-all solution. With hundreds of distros available, each catering to specific needs, you can find one that suits you perfectly. Some popular distros include Ubuntu, Fedora, Debian, and Arch Linux. Whether you're a server administrator, a gamer, a developer, or just an everyday user, there's a Linux distro tailored to your requirements.</p>
+                One of Linux's most captivating features is its unparalleled customization options. From the desktop environment to the kernel itself, you have the freedom to configure your system exactly the way you want it. This level of control empowers users to build an operating system that reflects their unique preferences and needs.
+
+                </p>
+            </article>
+            <article>
+                <p><img src="linux security.jfif" class="article" alt="Linux Security">
+                    <h3> Stability and Security: Linux's Strong Foundations </h3>
+                    Linux is renowned for its stability and security. Due to its modular design and open-source development model, vulnerabilities are quickly identified and patched by the community. <p>This makes Linux a top choice for servers and mission-critical systems where reliability and security are paramount.</p>
+                </p>
+            </article>
+            <article><img src="Command line.jfif" class="article" alt="Linux Command Line">
+                <h3>
+                    The Command Line: Embracing the Terminal
+                </h3>
+                <p>
+                    While modern Linux desktop environments offer user-friendly interfaces, the command line (often referred to as the terminal) remains an integral part of the Linux experience. Learning to navigate and execute commands in the terminal can be a steep learning curve, but it offers unparalleled power and efficiency once mastered. 
+                    <br>It's the preferred tool of choice for administrators, developers, and power users.
+                </p>
+            </article>
+            <article>
+                <img src="linux-support.png" class="article" alt="Linux Support">
+                <h3>
+                    Community and Support: A Helping Hand Awaits
+                </h3>
+                <p>
+                The Linux community is one of its greatest strengths. 
+<br> Whether you're troubleshooting an issue, seeking advice on forums like Stack Exchange, or contributing to open-source projects, you'll find a global network of Linux enthusiasts ready to help. This strong sense of community fosters learning, collaboration, and innovation.
+
+                </p>
+            </article>
+            <article>
+                <p><img src="Linux Revolusion.jfif" class="article" alt="Linux Revolusion">
+                    <h3>Conclusion: Join the Penguin Revolution</h3>
+                    <p>Linux is more than just an operating system; it's a philosophy that champions freedom, collaboration, and empowerment. Its versatility, customization options, stability, and security make it a compelling choice for individuals, organizations, and industries worldwide. 
+                        <p> Whether you're looking to breathe new life into an old computer, set up a powerful server, or simply explore the world of open source, Linux welcomes all.</p>
+                    So, why not take the plunge and embark on your Linux journey today? Embrace the penguin, and you'll discover a world of endless possibilities, all within the grasp of your terminal window. Welcome to the open-source revolution; welcome to Linux!
+
+                </p>
+            </article>
+        </div>
+    </div>
+</section>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const readMoreButtons = document.querySelectorAll(".read-more-button");
+
+            readMoreButtons.forEach(function (button) {
+                button.addEventListener("click", function () {
+                    const fullContent = button.nextElementSibling;
+                    fullContent.classList.toggle("show");
+                });
+            });
+        });
+    </script>
+    <style>
+        .blogs-section {
+            width: 100%;
+            padding: 50px 5vw;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 80px;
+        }
+        .article {
+            width: 200px;
+            height: 150px;
+            object-fit:fill;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .read-more-button {
+            background-color: #000407;
+            color: #fff;
+            padding: 10px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            border-color: white;
+        }
+
+        /* Add this CSS to style the "show" class */
+        .full-content.show {
+            display: block;
+        }
+
+        .full-content {
+            display: none;
+            margin-top: 10px;
+        }
+
+        .blog-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .blog-overview {
+            margin: 10px 0 20px;
+            line-height: 30px;
+        }
+
+        .btn.dark {
+            background: #000000;
+            color: #fff;
+        }
+    </style>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="KINGS WORLD NEW LOGO.jpg" height="50px"alt=" My logo">
+            </div>
+            <div class="footer-info">
+                <p>&copy; 2023 Kingsworld.com </p>
+                <p> Email: <a href="mailto:kingsleyesisi@yahoo.com" sisi@gmail.com>Kingsleyesisi@yahoo.com</a> </p>
+            </div>
+        </div>
+    </footer>
+    <style>
+        /* Style the footer */
+        footer {
+            background-color: #111111;
+            color: #fff;
+            padding: 20px 0;
+        }
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+        }
+        .footer-logo img {
+            max-width: 150px;
+        }
+        .footer-info {
+            text-align: center;
+        }
+        .footer-info p {
+            margin-bottom: 10px;
+        }
+    </style>
+</html>
